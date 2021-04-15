@@ -25,7 +25,7 @@ SECRET_KEY = '-+^g6bx!8d(ar-b8a45ngrz8e*yr-uv%9a1&*!nw_-s22$ibby'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third-party apps
     'channels',
     'chat',
 ]
